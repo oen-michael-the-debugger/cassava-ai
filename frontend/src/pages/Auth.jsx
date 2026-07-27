@@ -76,29 +76,6 @@ const Auth = () => {
           </p>
         </div>
 
-        {/* Social Auth Buttons */}
-        <div className="grid grid-cols-2 gap-4 mb-8">
-          <button 
-            onClick={() => handleSocialAuth('google')}
-            className="flex items-center justify-center gap-2 py-3 border border-slate-200 dark:border-slate-700 rounded-2xl hover:bg-slate-50 dark:hover:bg-slate-800 transition-all font-bold text-sm dark:text-white"
-          >
-            <FcGoogle size={20} /> Google
-          </button>
-          <button 
-            onClick={() => handleSocialAuth('github')}
-            className="flex items-center justify-center gap-2 py-3 border border-slate-200 dark:border-slate-700 rounded-2xl hover:bg-slate-50 dark:hover:bg-slate-800 transition-all font-bold text-sm dark:text-white"
-          >
-            <FaGithub size={20} /> GitHub
-          </button>
-        </div>
-
-        <div className="relative flex items-center justify-center mb-8">
-          <hr className="w-full border-slate-200 dark:border-slate-800" />
-          <span className="absolute bg-white dark:bg-slate-900 px-4 text-xs font-black text-slate-400 uppercase tracking-widest">
-            Or use email
-          </span>
-        </div>
-
         {/* Auth Form */}
         <form onSubmit={handleSubmit} className="space-y-4">
           {error && (
